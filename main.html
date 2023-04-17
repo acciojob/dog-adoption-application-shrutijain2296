@@ -11,32 +11,33 @@
 	<form>
 		<div>
 			<label for = "name">Name</label><br>
-			<input type = "text" id = "name" placeholder = "Name"><br><br>
+			<input type = "text" id = "name" placeholder = "Name" required><br><br>
 		</div>
 		<div>
 			<label for = "phone">Phone Number</label><br>
-			<input type = "text" placeholder = "Phone Number" id = "phone"><br><br>
+			<input type = "text" placeholder = "Phone Number" id = "phone" required><br><br>
 		</div>
 		<div>
 			<label for = "address">Address</label><br>
-			<input type = "text" placeholder = "Address" id = "address"><br><br>
+			<input type = "text" placeholder = "Address" id = "address" required><br><br>
 		</div>
 		<div>
-			<input type = "checkbox" id = "checkbox" value = "Have you ever lived with a Dog before?">
+			<input type = "checkbox" id = "checkbox" value = "Have you ever lived with a Dog before?" required>
 			<label for = "checkbox">Have you ever lived with a Dog before?</label><br><br>	
 		</div>
 		<div>
 			<label for = "multiSelect">Please select your preferred breeds</label><br>
 			
-			<select name = "multiSelect" id = "multiSelect" multiple size = "3">
+			<select name = "multiSelect" id = "multiSelect" multiple size = "4" required>
 				<option value = "husky">Husky</option>
 				<option value = "germanShephard">German Shephard</option>
 				<option value = "poodle">Poodle</option>
+				<option value = "stray">Stray</option>
 			</select>
 		</div>
 		<br>
 		<div>
-			<button type = "submit" id = "submit">Submit</button>
+			<button type = "submit" id = "submit" value = "submit">Submit</button>
 		</div>
 	</form>
     <script type="text/javascript" src="./script.js">
